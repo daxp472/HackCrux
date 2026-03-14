@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import apiClient from '../../api/axios';
 import SearchResults from './SearchResults';
 
