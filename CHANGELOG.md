@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Root README updated for Gemini-first AI flow and ai-poc port `8001`
+- Client README replaced from Vite template with project-specific guide
+- Security policy clarified with implemented vs planned controls
+- System flow corrected: FIR registration actor is `POLICE`
+
 ### Planned
 - Mobile app (React Native) for Police Officers
 - Real-time notifications via WebSockets
@@ -67,7 +73,7 @@ This is the first complete release of NyayaSankalan, developed for the HackCrux 
 - FAISS-based similar case retrieval
 
 #### Authentication & Security
-- JWT-based authentication with refresh
+- JWT-based authentication with configurable expiry
 - bcrypt password hashing
 - Helmet.js security headers
 - express-validator input sanitisation

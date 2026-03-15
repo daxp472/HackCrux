@@ -1,5 +1,7 @@
 # 🎉 AI Enhancement Implementation - COMPLETE!
 
+> Historical note: This document records the original ai-poc feature drop. The current application now integrates ai-poc through backend routes (`/api/ai` and `/api/ai/enhanced/*`) and may include additional Gemini-first behavior in backend chat flow.
+
 ## ✅ All Features Successfully Implemented
 
 Dear User,

@@ -29,19 +29,36 @@ We provide security updates for the following versions:
 - **Input validation** on all API endpoints using express-validator
 - **SQL injection prevention** through Prisma ORM parameterized queries
 - **XSS protection** - All user inputs sanitized before rendering
-- **CSRF protection** - Tokens used for state-changing operations
 - **Data encryption at rest** for sensitive fields (planned)
 - **File upload validation** - Type, size, and content checks
 - **Audit logging** - Complete trail of all data modifications
 
 ### API Security
 
-- **Rate limiting** to prevent brute force attacks
 - **CORS configuration** - Only trusted origins allowed
 - **Request size limits** - Prevents DoS attacks
 - **Authentication required** on all sensitive endpoints
 - **Error handling** - No sensitive information in error messages
 - **API versioning** for backwards compatibility
+
+### Security Control Status
+
+Currently implemented in codebase:
+
+- Helmet security headers (`helmet` middleware)
+- CORS configuration (`cors` middleware)
+- JWT authentication + role-based authorization
+- Input validation (`express-validator`)
+- Prisma ORM-based SQL injection protections
+- Request body size limits (`express.json`, `express.urlencoded`)
+- Audit logging for key workflows
+
+Planned / recommended for production hardening:
+
+- Rate limiting for auth and high-cost endpoints
+- CSRF protections (if cookie-based auth is expanded)
+- Encryption-at-rest strategy for highly sensitive artifacts
+- 2FA for privileged user roles
 
 ### Infrastructure Security
 
@@ -246,6 +263,6 @@ For general questions: See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
-**Last Updated**: December 31, 2025
+**Last Updated**: March 15, 2026
 
 Thank you for helping keep NyayaSankalan and its users safe! 🔒

@@ -38,7 +38,7 @@ NyayaSankalan implements a **Role-Based Access Control (RBAC)** model with four 
 
 | Action | POLICE | SHO | COURT_CLERK | JUDGE |
 |--------|--------|-----|-------------|-------|
-| Register new FIR | ✅ | ✅ | ❌ | ❌ |
+| Register new FIR | ✅ | ❌ | ❌ | ❌ |
 | View own station FIRs | ✅ | ✅ | ❌ | ❌ |
 | View all FIRs | ❌ | ✅ | 📖 | 📖 |
 | Edit FIR (before assignment) | ✅ | ✅ | ❌ | ❌ |

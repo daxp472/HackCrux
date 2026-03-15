@@ -58,7 +58,7 @@ ARCHIVED                APPEALED
 
 | Attribute | Value |
 |-----------|-------|
-| **Actor** | Police Officer or SHO |
+| **Actor** | Police Officer |
 | **Action** | Register First Information Report |
 | **System Response** | Create FIR record + Auto-create Case record |
 | **State Change** | `NULL → FIR_REGISTERED` |

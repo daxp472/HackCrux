@@ -1,5 +1,7 @@
 # AI Enhancement Features - Implementation Summary
 
+> Note: In the current monorepo flow, app users call backend endpoints under `/api/ai` and `/api/ai/enhanced/*`; backend proxies selected requests to this ai-poc service.
+
 ## 🎯 What We Implemented
 
 Successfully implemented **4 major AI enhancement features** for NyayaSankalan CMS:

@@ -58,10 +58,15 @@ tesseract --version
 
 ```powershell
 cd ai-poc
-uvicorn main:app --host 0.0.0.0 --port 8001 --reload
+uvicorn main:app --host 127.0.0.1 --port 8001 --reload
 ```
 
 The service will start on: **http://localhost:8001**
+
+Backend integration note:
+
+- Backend default `AI_POC_URL` is `http://localhost:8001`
+- Frontend normally consumes backend routes (not ai-poc directly)
 
 ---
 
